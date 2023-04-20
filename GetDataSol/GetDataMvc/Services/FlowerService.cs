@@ -52,6 +52,13 @@ namespace GetDataMvc.Services
 
 
 
+        public Flower GetFlower(int id)
+        {
+            return this.flowers.First<Flower>(f => f.ID == id);
+        }
+
+
+
     }
 
 

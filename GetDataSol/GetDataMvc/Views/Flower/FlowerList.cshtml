@@ -12,16 +12,16 @@
 
 <table>
     <tr>
-        <th>ID</th>
+        @* <th>ID</th> *@
         <th>Species</th>
-        <th>Prevailing Color</th>
+        @* <th>Prevailing Color</th> *@
     </tr>
     @foreach (Flower flower in this.Model.Flowers)
     {
         <tr>
-            <td>@flower.ID</td>
-            <td>@flower.Species</td>
-            <td>@flower.PrevailingColor</td>
+            @* <td>@flower.ID</td> *@
+            <td><a href="/flowers/detail/@flower.ID">@flower.Species</a></td>
+            @* <td>@flower.PrevailingColor</td> *@
         </tr>
     }
 </table>

@@ -46,6 +46,20 @@ namespace GetDataMvc.Controllers
 
 
 
+        // GET /flowers/detail/3
+        [HttpGet("detail/{id:int}")]
+        public IActionResult ShowFlowerDetail([FromRoute] int id)
+        {
+            Flower flower = this.flowerService.GetFlower(id);
+
+            FlowerDetailViewModel model = new FlowerDetailViewModel();
+            model.Flower = flower;
+
+            return View("FlowerDetail", model);
+        }
+
+
+
     }
 
 
