@@ -28,8 +28,8 @@ namespace GetDataMvc.Services
 
 
 
-        //private void PrepareData()
-        private string PrepareData()
+        private void PrepareData()
+        //private string PrepareData()
         {
             this.flowers = new List<Flower>();
 
